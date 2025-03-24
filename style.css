@@ -207,4 +207,9 @@ input[id="add-task"] {
     padding: 0.7rem 0.9rem;
     border-radius: 0.3rem;
     font-weight: 400;
+    border: none;
+}
+
+.clear-task-text:hover {
+    color: red;
 }

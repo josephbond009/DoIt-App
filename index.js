@@ -13,7 +13,8 @@ const noTaskImg = document.querySelector(".task-img")
 const noTaskParag = document.querySelector(".task-parag")
 
 const clearTaskContainer = document.querySelector("#clear-task")
-const clearTaskText = document.querySelector(".clear-task-text")
+const clearTaskText = document.createElement("button")
+clearTaskText.classList.add("clear-task-text")
 // const boldClearTask = document.querySelector(".bold-clear-task")
 
 
@@ -39,7 +40,6 @@ const taskList = [];
 
 addTaskBtn.addEventListener("click", function () {
     if (!taskInput.value || taskInput.value.trim() === "") {
-        console.log("Input a task");
     } else {
         addNewTasks();
     }
@@ -49,7 +49,7 @@ taskInput.addEventListener("keydown", function (e) {
 
     if (e.key === "Enter") {
         if (!taskInput.value || taskInput.value.trim() === "") {
-            console.log("Input a task");
+
         } else {
             addNewTasks();
         }
@@ -58,8 +58,6 @@ taskInput.addEventListener("keydown", function (e) {
 
 function addNewTasks() {
     taskList.push(taskInput.value);
-    console.log(taskList[taskList.length - 1]);
-    console.log(taskList);
 
     noTasksUI.style.display = "none"
     
@@ -125,6 +123,7 @@ const removeTaskElements = () => {
     clearTaskText.style.backgroundColor = "#F8ECFE"
     clearTaskText.textContent = "Clear Selected task"
     clearTaskContainer.append(clearTaskText)
+    clearTaskContainer.style.display = "block"
 }
 
 taskSpace.addEventListener("click", function (e) {
@@ -167,5 +166,8 @@ clearTaskContainer.addEventListener("click", (e) => {
             task.remove()
         }
     }
+
+    clearTaskContainer.style.display = "none"
 })
+
 
