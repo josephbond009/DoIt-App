@@ -214,6 +214,12 @@ input[id="add-task"] {
     color: red;
 }
 
+@media (max-width: 1024px) {
+    .task-checkbox {
+        left: -13.5rem;
+    }
+}
+
 @media (max-width: 768px) {
     .header {
         font-size: 2rem;
@@ -230,6 +236,16 @@ input[id="add-task"] {
 
     #tasks {
         width: 95%;
+    }
+
+    .task-checkbox {
+        left: -21rem;
+    }
+}
+
+@media (max-width: 540px) {
+    .task-checkbox {
+        left: -14.3rem;
     }
 }
 
@@ -257,8 +273,25 @@ input[id="add-task"] {
     }
 
     .task-checkbox {
-        background-color: green;
         z-index: 1;
         left: -8.5rem;
+    }
+}
+
+@media (max-width: 430px) {
+    .task-checkbox {
+        left: -14.3rem;
+    }
+}
+
+@media (max-width: 390px) {
+    .task-checkbox {
+        left: -9.8rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .task-checkbox {
+        left: -8.35rem;
     }
 }
