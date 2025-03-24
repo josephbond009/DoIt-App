@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(90deg, #C096FB, #B0C8FB);
+    font-family: Arial, sans-serif;
+}
+
+#task-header {
+    margin-top: 1.2rem;
+}
+
+.header {
+    font-size: 48px;
+    color: #B62FAE;
+}
+
+.task-completion-stage {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 0.6rem;
+}
+
+
+.remaining, .completed {
+    padding: 0.3rem 0.5rem;
+    /* border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px; */
+    border-radius: 10px;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.remaining {
+    background: linear-gradient(45deg, #9A58F6, #7063EF);
+}
+
+.completed {
+    background: linear-gradient(45deg, #0CC088, #0AB89E);
+}
+
+#activities {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background-color: #F8ECFE;
+    border-radius: 8px;
+}
+
+input[id="add-tasks"] {
+    padding: 6.5px 200px 6.5px 8.5px;
+    border-radius: 5px;
+    border: solid rgb(209, 205, 205) 2px;
+    width: 100%;
+}
+
+.selection {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.6rem;
+}
+
+#categories, #priority {
+    padding: 6.5px 90px 6.5px 8.5px;
+    border-radius: 5px;
+    border: solid rgb(209, 205, 205) 2px;
+}
+
+input[id="add-task"] {
+    padding: 7.2px 20px 7.2px 8px;
+}
+
+.add-task button {
+    padding: 9.5px 16px 9.2px 17px;
+    border-radius: 5px;
+    border: solid #FBB723 1px;
+    background: linear-gradient(45deg, #FBB723, rgb(255, 30, 0));
+}
+
+.add-task button:hover {
+    background: linear-gradient(45deg, #e7a20b, rgb(241, 32, 5));
+    border: solid #e7a20b 1px;
+}
+
+.add-btn .add {
+    margin-left: 0.6rem;
+    color: #FFF;
+}
+
+.plus {
+    color: #FFF;
+    font-size: 16px;
+}
+
+#tasks {
+    margin-top: 0.2rem;
+    width: 487.34px;
+}
+
+.no-tasks {
+    margin-top: 2rem;
+    background-color: #F8ECFE;
+    padding: 2rem 4.9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 0.5rem;
+}
+
+.no-task-text {
+    color: #225fa5;
+    font-size: 1.1rem;
+}
+
+
+
+/* .user-task {
+    margin-top: 1.5rem;
+    background-color: #F8ECFE;
+    padding: 12px 200px 12px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 0.5rem;
+    width: 488px;
+    box-sizing: border-box;
+} */
+
+
+/* The style for the javascript */
+.user-task {
+    padding: 1rem 2rem 1.3rem 1rem;
+    background-color: #F8ECFE;
+    margin-top: 1.5rem;
+    border-radius: 0.5rem;
+    max-width: 100%;
+}
+
+.check-tag {
+    display: flex;
+    flex-direction: column;
+}
+
+.task-checkbox {
+    position: relative;
+    top: 1.2rem;
+    left: -13.2rem;
+}
+
+.tag {
+    position: relative;
+    top: 0.8rem;
+    left: 1.4rem;
+    padding: 5px 10px;
+    background-color: #4ECDC4;
+    font-size: 0.7rem;
+    color: #FAEFFE;
+    border-radius: 1rem;
+    z-index: 1;
+}
+
+.parag-clock-del {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    /* gap: 22rem; this was going to mess with the layout 
+    and there was no need for it because I already used 
+    positioning for the delete button*/
+    bottom: 2.5rem;
+    left: 1rem;
+}
+
+.del {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: 1.6rem;
+    display: none;
+}
+
+.user-task:hover .del{
+    display: block;
+}
+.task-text {
+    position: relative;
+    top: 0.5rem;
+    left: 0.4rem;
+}
+
+.clear-task {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.clear-task-text {
+    font-size: 0.9rem;
+    padding: 0.7rem 0.9rem;
+    border-radius: 0.3rem;
+    font-weight: 400;
+}

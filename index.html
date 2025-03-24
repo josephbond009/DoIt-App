@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <title>DoIt</title>
+  </head>
+  <body>
+    <header id="task-header">
+      <h1 class="header">My DoIt Tasks</h1>
+
+      <!-- <div class="task-completion-stage">
+        <div class="remaining">
+          <p>
+            <span class="icon"><i class="fa-solid fa-list-check"></i></span>
+            <span class="task-remain">0</span> remaining
+          </p>
+        </div>
+        <div class="completed">
+          <p>
+            <span class="icon"><i class="fa-regular fa-circle-check"></i></span>
+            <span class="task-complete">0</span> completed
+          </p>
+        </div>
+      </div> -->
+    </header>
+
+    <section id="activities">
+      <input
+        type="text"
+        id="add-tasks"
+        name="first-name"
+        placeholder="Add a new task..."
+      />
+      <div class="selection">
+        <select name="categories" id="categories" required>
+          <option value="work">Work</option>
+          <option value="Personal" selected>Personal</option>
+          <option value="Shopping">Shopping</option>
+          <option value="Health">Health</option>
+          <option value="Study">Study</option>
+        </select>
+
+        <select name="priority" id="priority" disabled>
+          <option value="low">Low</option>
+          <option value="medium" selected>Medium</option>
+          <option value="high">High</option>
+        </select>
+
+        <div class="add-task">
+          <button class="add-btn">
+            <span class="plus">+</span> <span class="add">Add</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="tasks">
+      <div class="no-tasks">
+        <div class="task-img">
+          <img src="Images/check_5253896.png" alt="list-img" />
+        </div>
+        <div class="task-parag">
+          <p class="no-task-text"><b>No tasks yet. Add one to get started!</b></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section id="tasks">
+      <div class="user-task">
+        <div class="check-tag">
+          <input type="checkbox" />
+          <div>
+            <span class="tag">Personal</span>
+          </div>
+        </div>
+
+        <div class="parag-clock-del">
+          <span class="task-text"><b>Go Home 🕘</b></span>
+          <img class="del" src="Images/icons8-trash-48.png" alt="trash" />
+        </div>
+      </div>
+      <div class="user-task">
+        <div class="check-tag">
+          <input type="checkbox" />
+          <div>
+            <span class="tag">School</span>
+          </div>
+        </div>
+
+        <div class="parag-clock-del">
+          <span class="task-text"><b>Damn 🕘</b></span>
+          <img class="del" src="Images/icons8-trash-48.png" alt="trash" />
+        </div>
+      </div>
+      <div class="user-task">
+        <div class="check-tag">
+          <input type="checkbox" />
+          <div>
+            <span class="tag">Personal</span>
+          </div>
+        </div>
+
+        <div class="parag-clock-del">
+          <span class="task-text">Chaii see work 🕘</span>
+          <img class="del" src="Images/icons8-trash-48.png" alt="trash" />
+        </div>
+      </div>
+    </section> -->
+
+    <section id="clear-task">
+      <span class="clear-task-text"></span>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>
